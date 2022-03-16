@@ -1,11 +1,11 @@
 .active {
-  border-bottom: 4px solid turquoise;
+  border-bottom: 4px solid rgb(31, 207, 125);
   font-size: 20px;
   border-radius: 25px;
   font-weight: bold;
   background: linear-gradient(
     to right top,
-    #2d6ac9,
+    #6dbb49,
     #0093eb,
     #00b7e5,
     #00d4b9,
@@ -17,7 +17,42 @@
 
 .accordion-item {
   background-color: white;
-  border-color: blue;
+  border-color: black;
   box-shadow: rgba(92, 19, 107, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.26) 0px 15px 22px;
+}
+
+.buttonContainer {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  margin-right: 60px;
+  font-size: 20px;
+  border-radius: 28px;
+  padding: 8px 30px;
+  background: linear-gradient(to right, #ab1dcf, #f80759);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 19px 38px,
+    rgba(0, 0, 0, 0.23) 0px 15px 22px;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.nextContainer {
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  font-size: 20px;
+  border-radius: 28px;
+  padding: 8px 30px;
+  background: linear-gradient(to right, #ab1dcf, #f80759);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 19px 38px,
+    rgba(0, 0, 0, 0.23) 0px 15px 22px;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s;
 }

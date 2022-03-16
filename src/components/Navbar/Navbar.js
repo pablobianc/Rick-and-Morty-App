@@ -4,10 +4,10 @@ import "../../App.css";
 
 const Navbar = () => {
   return (
-    <nav className='navbar navbar-expand-lg navbar-light bg-light mb-3'>
+    <nav className='navbar navbar-expand-lg navbar-white fw-bold bg-light mb-5'>
       <div className='container'>
         <Link to='/' className='fs-3 navbar-brand'>
-          <span className='text-warning fw-bold '> Rick & Morty App</span>
+          <span className='text-warning fs-1 fw-bold '> Rick & Morty App</span>
         </Link>
 
         <style jsx>{`
@@ -35,7 +35,7 @@ const Navbar = () => {
           className='collapse navbar-collapse justify-content-end'
           id='navbarNavAltMarkup'
         >
-          <div className='navbar-nav fs-5'>
+          <div className='navbar-nav fs-3 f2'>
             <NavLink to='/' className='nav-link'>
               Caracteres
             </NavLink>

@@ -36,12 +36,14 @@ const Cards = ({ pageNumber, renderItems, handlePage }) => {
                 <div className={styles.cards}>
                   <img src={image} alt='' className={styles.img} />
                   <div style={{ padding: "10px" }} className='content'>
-                    <div className='fs-3 fw-bold'>{name}</div>
+                    <div className='fs-2 fw-bold'>{name}</div>
                     <div className=''>
-                      <div className='fs-7 fw-bold text-primary'>
-                        Ultima ubicacion
+                      <div className='fs-2 fw-bold text-primary'>
+                        Ultima ubicacion:
                       </div>
-                      <div className='fs-4'>{location.name}</div>
+                      <div className='text-danger fw-bold fs-2'>
+                        {location.name}
+                      </div>
                     </div>
                   </div>
                   <div
@@ -55,18 +57,25 @@ const Cards = ({ pageNumber, renderItems, handlePage }) => {
             );
           })
         : "No se encontraron resultados"}
-      <button
-        type='button'
-        onClick={() => {
-          if (pageNumber <= 1) return null;
-          handlePage((prev) => prev - 1);
-        }}
-      >
-        previous
-      </button>
-      <button type='button' onClick={() => handlePage((prev) => prev + 1)}>
-        next
-      </button>
+      <div>
+        <button
+          className='buttonContainer'
+          type='button'
+          onClick={() => {
+            if (pageNumber <= 1) return null;
+            handlePage((prev) => prev - 1);
+          }}
+        >
+          Anterior
+        </button>
+        <button
+          className='nextContainer'
+          type='button'
+          onClick={() => handlePage((prev) => prev + 1)}
+        >
+          Siguiente
+        </button>
+      </div>
     </>
   );
 };

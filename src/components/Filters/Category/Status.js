@@ -2,12 +2,12 @@ import React from "react";
 import FilterBTN from "../FilterBTN";
 
 const Status = ({ setStatus, setPageNumber }) => {
-  let status = ["Alive", "Dead", "Uknown"];
+  let status = ["Alive", "Dead", "unknown"];
   return (
     <div className='accordion-item'>
       <h2 className='accordion-header' id='headingThree'>
         <button
-          className='accordion-button fw-bold collapsed'
+          className='accordion-button fs-2 fw-bold collapsed'
           type='button'
           data-bs-toggle='collapse'
           data-bs-target='#collapseThree'
@@ -32,6 +32,7 @@ const Status = ({ setStatus, setPageNumber }) => {
               name='status'
               index={index}
               items={items}
+              setStatus={setStatus}
             ></FilterBTN>
           ))}
         </div>

@@ -42,13 +42,31 @@ const Home = () => {
     fetchData();
   }, [pageNumber, search]);
 
+  async function filter(filter, search) {
+    let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}-&${filter}=${search}`;
+    let data = await fetch(api).then((res) => res.json());
+    updateFechedData(data.results);
+    setTotalPages(data.info.pages);
+  }
+
+  async function clearFilter() {
+    let api = "https://rickandmortyapi.com/api/character/";
+    let data = await fetch(api).then((res) => res.json());
+    updateFechedData(data.results);
+    setTotalPages(data.info.pages);
+  }
+
   return (
     <div className='App'>
       <Search setSearch={setSearch} />
 
       <div className='container'>
         <div className='row'>
-          <Filters setStatus={setStatus} setPageNumber={setPageNumber} />
+          <Filters
+            setStatus={filter}
+            setPageNumber={setPageNumber}
+            clearFilter={clearFilter}
+          />
 
           <div className='col-8'>
             <div className='row'>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const FilterBTN = ({ name, index, items }) => {
+const FilterBTN = ({ name, setStatus, items }) => {
   return (
     <div>
       {/* <style jsx>
@@ -39,7 +39,7 @@ const FilterBTN = ({ name, index, items }) => {
           for='flexRadioDefault2'
         ></label>
       </div> */}
-      <button type='button' onClick={() => console.log(name)}>
+      <button type='button' onClick={() => setStatus(name, items)}>
         {items}
       </button>
     </div>

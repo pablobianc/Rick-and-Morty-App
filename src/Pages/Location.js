@@ -1,7 +1,7 @@
 import React from "react";
 
 const Location = () => {
-  return <div>The location are here</div>;
+  return <h1 className='text-center fw-bold'>Proximamente..</h1>;
 };
 
 export default Location;

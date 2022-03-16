@@ -20,3 +20,18 @@ $radius: 10px;
   border-radius: 5px;
   padding: 3px;
 }
+
+button {
+  color: rgb(48, 48, 53);
+  font-size: 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  background: linear-gradient(
+    to right top,
+    #2d6ac9,
+    #0093eb,
+    #00b7e5,
+    #00d4b9,
+    #12eb79
+  );
+}

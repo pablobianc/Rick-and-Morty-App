@@ -1,6 +1,6 @@
 import React from "react";
 import FilterBTN from "../FilterBTN";
-const Species = () => {
+const Species = ({ setStatus }) => {
   let species = [
     "Human",
     "Alien",
@@ -18,7 +18,7 @@ const Species = () => {
     <div className='accordion-item'>
       <h2 className='accordion-header' id='headingTwo'>
         <button
-          className='accordion-button fw-bold  collapsed'
+          className='accordion-button fs-2 fw-bold  collapsed'
           type='button'
           data-bs-toggle='collapse'
           data-bs-target='#collapseTwo'
@@ -41,6 +41,7 @@ const Species = () => {
               name='species'
               index={index}
               items={items}
+              setStatus={setStatus}
             ></FilterBTN>
           ))}
         </div>
