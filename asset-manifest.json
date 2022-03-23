@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Rick-and-Morty-App/static/css/main.e81bdc76.css",
-    "main.js": "/Rick-and-Morty-App/static/js/main.83be1b72.js",
+    "main.css": "/Rick-and-Morty-App/static/css/main.8f2561e3.css",
+    "main.js": "/Rick-and-Morty-App/static/js/main.217cade5.js",
     "static/js/787.9add5da9.chunk.js": "/Rick-and-Morty-App/static/js/787.9add5da9.chunk.js",
     "index.html": "/Rick-and-Morty-App/index.html",
-    "main.e81bdc76.css.map": "/Rick-and-Morty-App/static/css/main.e81bdc76.css.map",
-    "main.83be1b72.js.map": "/Rick-and-Morty-App/static/js/main.83be1b72.js.map",
+    "main.8f2561e3.css.map": "/Rick-and-Morty-App/static/css/main.8f2561e3.css.map",
+    "main.217cade5.js.map": "/Rick-and-Morty-App/static/js/main.217cade5.js.map",
     "787.9add5da9.chunk.js.map": "/Rick-and-Morty-App/static/js/787.9add5da9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e81bdc76.css",
-    "static/js/main.83be1b72.js"
+    "static/css/main.8f2561e3.css",
+    "static/js/main.217cade5.js"
   ]
 }
